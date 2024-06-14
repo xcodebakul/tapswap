@@ -13,12 +13,23 @@ Install with python
 ```bash
   1. Download Python 3.10+
   2. Install Module (pip install requests colorama bs4)
-  3. Buka Bot TapSwap Di Telegram Web / Desktop
-  4. Jika sudah muncul QR "Leave the desktop gaming...."
-  5. Klik Kanan Inspect > Application > Session Storage > app.tapswap.club
-  6. copy tgwebappdata (full semua tanpa tanda kutip) query_id=xxxx atau user_id=xxx
-  7. Paste di init_data
-  8. python tapswap.py
+  3. Pake chrome based. download extension Resource Override (https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii)
+  4. Atur seperti ini agar bisa buka bot yang support hp only di tele web
+    Tab URL : *
+    From : https://telegram.org/js/telegram-web-app.js
+    To : https://ktnff.tech/universal/telegram-web-app.js
+    Khusus untuk tapswap tambahkan
+    Add Rule > Change Header
+    For : *://app.tapswap.club/*
+    Response Header : 
+    Add : Set -> X-Frame-Options
+    Value -> app.tapswap.club
+  5. Buka Tapswap di telegram web (bukan desktop)
+  6. Inspek elemen > reload game > Cari di network ketik login
+  7. Ambil CHR dan init_data paste id init_data.txt format chr|query_Id
+  8. Paste di init_data
+  9. python tapswap.py
+  10. Jangan buka bot tapswap nya nanti chr ganti lagi (error lagi)
 ```
 
 
