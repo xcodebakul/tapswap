@@ -17,7 +17,8 @@ Install with python
   4. Jika sudah muncul QR "Leave the desktop gaming...."
   5. Klik Kanan Inspect > Application > Session Storage > app.tapswap.club
   6. copy tgwebappdata (full semua tanpa tanda kutip) query_id=xxxx atau user_id=xxx
-  7. Paste di init_data  
+  7. Paste di init_data
+  8. python tapswap.py
 ```
 
 
